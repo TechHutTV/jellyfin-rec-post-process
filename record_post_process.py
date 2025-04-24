@@ -8,7 +8,7 @@ import time
 from pathlib import Path
 from time import strftime
 
-LOGFILE = "/path/to/logging/directory/logs/{}-record_process-py.log".format(
+LOGFILE = "/var/log/jellyfin/{}-record_process-py.log".format(
     strftime("%Y-%m-%d_%H-%M-%S")
 )
 logging.basicConfig(
@@ -57,7 +57,7 @@ def main():
 
     # command to run in a shell (ensure that the full path to ffmpeg is specified: [result of which ffmpeg])
     command = (
-        '/usr/local/bin/ffmpeg -i "'
+        '/usr/bin/ffmpeg -i "'
         + file_path
         + '" -vcodec h264_videotoolbox -acodec copy -b:v 3000k "'
         + out_path
