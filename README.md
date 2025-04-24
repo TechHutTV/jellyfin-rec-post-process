@@ -1,6 +1,13 @@
-# Jellyfin-TV-Post-Process
+# Jellyfin Live TV Recording Post Process Script
 
-This repo has scripts that are used to post-process video files recorded from Live TV using Jellyfin and a HDHomeRun
+> Not yet working
+
+This repo has scripts that are used to post-process video files recorded from Live TV using Jellyfin and a HDHomeRun.
+
+Prereq
+```
+sudo apt install ffmpeg python3
+```
 
 Configuration: 
 
